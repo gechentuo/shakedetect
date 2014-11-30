@@ -42,6 +42,9 @@ public class WatchActivity extends Activity {
         });
     }
 
+    /**
+     * this will keep the screen on while the activity is active
+     */
     @Override
     protected void onResume() {
         super.onResume();

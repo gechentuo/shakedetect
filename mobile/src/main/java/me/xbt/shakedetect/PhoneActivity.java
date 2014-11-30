@@ -58,4 +58,22 @@ public class PhoneActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * this will keep the screen on while the activity is active
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+        shakeDetectActivity.onResume();
+        getWindow().addFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+    }
+
+    @Override
+    protected void onPause() {
+        getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        shakeDetectActivity.onPause();
+        super.onPause();
+    }
+
 }
