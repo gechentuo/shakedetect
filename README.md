@@ -16,6 +16,7 @@ Error:(16, 0) Gradle DSL method not found: 'runProguard()' Possible causes:
   <li>The build file may be missing a Gradle plugin. <a href="apply.gradle.plugin">Apply Gradle plugin</a></li>
 </ul>
 
+solution:
 to fix this, change runProguard in build.gradle to minifyEnabled
 
 see http://stackoverflow.com/questions/27078075/gradle-dsl-method-not-found-runproguard
@@ -25,5 +26,9 @@ see http://stackoverflow.com/questions/27078075/gradle-dsl-method-not-found-runp
 
 Build failed with an exception.  * What went wrong: Task '' not found in root project 
 
-see http://stackoverflow.com/questions/25172006/android-studio-build-fails-with-task-not-found-in-root-project-myproject
+solution: 
+invalidate cache and restart.
+> File | Invalidate Caches / Restart
+
+see http://stackoverflow.com/questions/25172006/android-studio-build-fails-with-task-not-found-in-root-project-myproject  for other things to check
 
