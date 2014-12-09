@@ -19,6 +19,8 @@ Error:(16, 0) Gradle DSL method not found: 'runProguard()' Possible causes:
 solution:
 to fix this, change runProguard in build.gradle to minifyEnabled
 
+clean and rebuild
+
 see http://stackoverflow.com/questions/27078075/gradle-dsl-method-not-found-runproguard
 
 
